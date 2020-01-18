@@ -1,0 +1,4 @@
+{
+  "privatekey": "dfsdgbs",
+  "db": "mongodb://localhost/Vidly"
+}

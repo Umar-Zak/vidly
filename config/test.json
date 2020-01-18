@@ -1,0 +1,4 @@
+{
+  "privatekey": "1234",
+  "db": "mongodb://localhost/Vidly_tests"
+}
