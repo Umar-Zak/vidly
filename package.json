@@ -4,7 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest --watchAll --verbose --coverage"
+    "test": "jest --watchAll --verbose",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "12.13.1"
   },
   "keywords": [],
   "author": "",

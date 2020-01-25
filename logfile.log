@@ -3248,3 +3248,9 @@
 {"level":"info","message":"Connected to mongodb://localhost/Vidly_tests","timestamp":"2020-01-18T09:10:52.719Z"}
 {"level":"info","message":"Listening to port 3000","timestamp":"2020-01-18T09:10:53.598Z"}
 {"level":"info","message":"Connected to mongodb://localhost/Vidly_tests","timestamp":"2020-01-18T09:10:53.609Z"}
+{"level":"info","message":"Listening to port 3000","timestamp":"2020-01-25T08:37:21.373Z"}
+{"level":"info","message":"Connected to mongodb://localhost/Vidly","timestamp":"2020-01-25T08:37:22.332Z"}
+{"level":"info","message":"Listening to port 3000","timestamp":"2020-01-25T08:39:14.159Z"}
+{"level":"info","message":"Connected to mongodb://localhost/Vidly","timestamp":"2020-01-25T08:39:14.230Z"}
+{"level":"info","message":"Listening to port 3000","timestamp":"2020-01-25T08:39:43.019Z"}
+{"level":"info","message":"Connected to mongodb://localhost/Vidly","timestamp":"2020-01-25T08:39:43.124Z"}
