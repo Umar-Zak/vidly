@@ -4,8 +4,15 @@ const bcrypt = require("bcrypt");
 describe("/api/auth", () => {
   let user;
   let server;
+  let body;
+  function exceLogin(){
+    return request(server)
+    .post("/api/auth")
+    .send(body);
+  }
   beforeEach(async () => {
     server = require("../../app");
+    body={ email: "umarabanga45@gmail.com", password: "0201348856" }
     user = new User({
       name: "Umar Zakaria",
       email: "umarabanga45@gmail.com",
@@ -24,27 +31,22 @@ describe("/api/auth", () => {
 
   describe("/", () => {
     it("should return with status 400 if request contains bad data", async () => {
-      const res = await request(server)
-        .post("/api/auth")
-        .send({ email: "ewyweyuiyweiow", password: "0201348856" });
+     body.email="invalid"
+     const res=await exceLogin();
       expect(res.status).toBe(400);
     });
     it("should return with status 400 if the provided email doesnot exist", async () => {
-      const res = await request(server)
-        .post("/api/auth")
-        .send({ email: "umarabanga451@gmail.com", password: "0201348856" });
+      body.email="umarabanga451@gmail.com";
+      const res=await exceLogin();
       expect(res.status).toBe(400);
     });
     it("should return with status 400 if the provided password is incorrect", async () => {
-      const res = await request(server)
-        .post("/api/auth")
-        .send({ email: "umarabanga45@gmail.com", password: "0201348856123" });
+     body.password="0201348856123";
+     const res=await exceLogin();
       expect(res.status).toBe(400);
     });
     it("should return with status 200 if the provided eamil & password are correct", async () => {
-      const res = await request(server)
-        .post("/api/auth")
-        .send({ email: "umarabanga45@gmail.com", password: "0201348856" });
+      
       expect(res.status).toBe(200);
     });
   });
