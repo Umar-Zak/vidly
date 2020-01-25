@@ -2,5 +2,6 @@
   "mail": {
     "password": "password"
   },
-  "privatekey": "vidly_app_privatekey"
+  "privatekey": "vidly_app_privatekey",
+  "db": "vidly_backend_umar"
 }
