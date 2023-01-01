@@ -16,7 +16,7 @@
   "dependencies": {
     "@hapi/joi": "^16.1.8",
     "bcrypt": "^3.0.6",
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "debug": "^4.1.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
